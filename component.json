@@ -1,0 +1,8 @@
+{
+	"name":"menu",
+	"version":"0.1.0",
+	"description":"nested selection menu",
+	"repo":"kaerus-component/menu",
+	"scripts":["index.js"],
+	"styles":["stylesheet.css"]
+}

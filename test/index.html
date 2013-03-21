@@ -1,0 +1,28 @@
+<!doctype html>
+<head>
+	<title>Top header menu</title>
+	<link rel="stylesheet" href="../build/build.css" />
+</head>
+<body>
+	<header>
+		<div id="menu"></div>
+	</header>
+	<script src="../build/build.js"></script>
+	<script>
+		var Menu = require('menu');
+
+		var items = {
+			'0':{caption:"first",target:"first.html"},
+			'1':{caption:"test",target:"test.html",child:{
+				'0':{caption:"child",target:"child.html"},
+				'1':{caption:"second",target:"second.html",child:{
+					'0':{caption:"third",target:"third.html"}
+				}}
+			}}
+		};	
+
+		var header_menu = new Menu('menu'); 
+		header_menu.show(items);
+	</script>
+</body>
+</html>

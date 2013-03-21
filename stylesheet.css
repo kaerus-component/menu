@@ -1,0 +1,80 @@
+/******************* MENU **********************/
+ul.menu {
+	margin: 0;
+	display:block;
+	position: relative;
+	float: left;
+
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	transition: all 2s ease;
+}
+
+ul.menu li {
+	display: block;
+	float: left;
+	top: auto;
+	color: #777;
+	width: auto;
+}
+
+ul.menu li span {
+	padding-left: 0.5em;
+	padding-right: 0.5em;	
+	white-space: nowrap;
+}
+
+/* fixme: remove left padding 
+ul.menu li:hover {
+	background: rgba(123,123,123,0.2);
+}
+*/
+
+ul.menu li a {
+	color: #333;
+	text-decoration: none;
+	text-shadow: -1px 1px 2px #fff;	
+}
+
+ul.menu li a:hover {	
+	text-decoration: underline;
+}
+
+ul.menu li > ul {
+	display: none;
+	border: solid 1px;
+	background: rgba(255,255,255,0.9);
+	
+	-webkit-box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+	-o-box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+	box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+
+	-webkit-border-radius: 0 0.3em 0.3em 0.3em;
+	-moz-border-radius: 0 0.3em 0.3em 0.3em;
+	-o-border-radius: 0 0.3em 0.3em 0.3em;
+	border-radius: 0 0.3em 0.3em 0.3em;
+
+	position: absolute;
+	left: auto;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
+
+ul.menu li > ul li {
+	position: relative;
+	left: auto;
+	width: 100%;
+}
+
+
+ul.menu li > ul li.child > ul {
+	left: 100%;
+	top: 0;
+}
+
+
+ul.menu li:hover > ul {
+	display: block;
+}
