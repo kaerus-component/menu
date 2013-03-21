@@ -25,11 +25,9 @@ ul.menu li span {
 	white-space: nowrap;
 }
 
-/* fixme: remove left padding 
 ul.menu li:hover {
 	background: rgba(123,123,123,0.2);
 }
-*/
 
 ul.menu li a {
 	color: #333;
@@ -73,7 +71,6 @@ ul.menu li > ul li.child > ul {
 	left: 100%;
 	top: 0;
 }
-
 
 ul.menu li:hover > ul {
 	display: block;

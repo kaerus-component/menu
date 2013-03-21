@@ -2,6 +2,7 @@
 <head>
 	<title>Top header menu</title>
 	<link rel="stylesheet" href="../build/build.css" />
+	<link rel="stylesheet" href="./stylesheet.css" />
 </head>
 <body>
 	<header>
@@ -12,11 +13,11 @@
 		var Menu = require('menu');
 
 		var items = {
-			'0':{caption:"first",target:"first.html"},
-			'1':{caption:"test",target:"test.html",child:{
-				'0':{caption:"child",target:"child.html"},
-				'1':{caption:"second",target:"second.html",child:{
-					'0':{caption:"third",target:"third.html"}
+			'0':{caption:"First",target:"first.html"},
+			'1':{caption:"Test",child:{
+				'0':{caption:"Second",target:"second.html"},
+				'1':{caption:"Second",child:{
+					'0':{caption:"Third",target:"third.html"}
 				}}
 			}}
 		};	
