@@ -1,6 +1,7 @@
 /******************* MENU **********************/
 ul.menu {
 	margin: 0;
+	padding: 0;
 	display:block;
 	position: relative;
 	float: left;
@@ -15,17 +16,25 @@ ul.menu li {
 	width: auto;
 }
 
-ul.menu li span {
+ul.menu li span.row {
 	padding-left: 0.5em;
 	padding-right: 0.5em;	
 	white-space: nowrap;
 }
 
-/*
+ul.menu li span span.glyph,
+ul.menu li span span.caption,
+ul.menu li span span.shortcut,
+ul.menu li span a span.glyph,
+ul.menu li span a span.caption,
+ul.menu li span a span.shortcut {
+	padding-right: 0.25em;
+}
+
+
 ul.menu li:hover {
 	background: rgba(123,123,123,0.2);
 }
-*/
 
 ul.menu li a {
 	color: #333;
@@ -33,9 +42,6 @@ ul.menu li a {
 	text-shadow: -1px 1px 2px #fff;	
 }
 
-ul.menu li a:hover {	
-	text-decoration: underline;
-}
 
 ul.menu li > ul {
 	display: none;

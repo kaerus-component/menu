@@ -17,7 +17,7 @@ function render(items,isChild){
 
 	items.forEach(function(item){
 		html+= (isChild ? '<li class="child">\n' : '<li>\n');
-		html+= '<span>';
+		html+= '<span class="row">';
 		
 		row = '';
 
