@@ -12,4 +12,10 @@
 	padding-top: 0.25em;
 	padding-left:2em;
 	height:1.25em;	
+
+	
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	transition: all 2s ease;
 }
