@@ -11,19 +11,16 @@
 	<script src="../build/build.js"></script>
 	<script>
 		var Menu = require('menu');
-		// With positioned menu items we can pull the menu 
-		// from a database and render it in correct order.
-		// We may also utilize drag'n'drop features clientside to 
-		// rearrange the menu and push an update to the database.   
-		var items = {
-			'0':{caption:"First",target:"first.html"},
-			'1':{caption:"Test",child:{
-				'0':{caption:"Something",target:"second.html"},
-				'1':{caption:"Third",child:{
-					'0':{caption:"Fourth",target:"third.html"}
-				}}
-			}}
-		};	
+
+		var items = [
+			{caption:"First",target:"first.html"},
+			{caption:"Test",child:[
+				{caption:"Something",target:"second.html",glyph:"X"},
+				{caption:"Third",child:[
+					{caption:"Fourth",target:"fourth.html",shortcut:"^C"}
+				]}
+			]}
+		];	
 
 		var header_menu = new Menu('menu'); 
 		header_menu.show(items);

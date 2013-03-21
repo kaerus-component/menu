@@ -10,22 +10,12 @@ Menu.prototype.target = function(elem){
 	return this;
 };
 
-function compare(a,b){
-    return a > b ? 1 : a < b ? -1 : 0;
-}
-
 function render(items,isChild){
-	if(typeof items !== 'object') return '';
-
-	/* order items by position */
-	var keys = Object.keys(items).map(function(pos){
-		return parseInt(pos,10);
-	}).sort(compare);
+	if(!Array.isArray(items)) return '';
 
 	var html = '<ul class="menu">\n', row;
 
-	keys.forEach(function(item){
-		item = items[item];
+	items.forEach(function(item){
 		html+= (isChild ? '<li class="child">\n' : '<li>\n');
 		html+= '<span>';
 		
