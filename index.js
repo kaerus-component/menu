@@ -20,11 +20,14 @@ function render(items,isChild){
 		html+= '<span class="row">';
 		
 		row = '';
+		
+		if(isChild && item.child && !item.glyph) item.glyph = "&#9654;";
+		if(item.shortcut) item.glyph = item.shortcut + (item.glyph ? '&nbsp;' + item.glyph : '');
 
-		if(item.glyph) row+= '<span class="glyph">' + item.glyph + '</span>';
-		if(item.caption) row+= '<span class="caption">' + item.caption + '</span>';
-		if(item.shortcut) row+= '<span class="shortcut">' + item.shortcut + '</span>';	
-		if(item.target) html+= '<a href="' + item.target + '">' + row +'</a>';
+		if(item.icon) row+= '<span class="menu-icon">' + item.icon + '</span>'; 
+		if(item.caption) row+= '<span class="menu-caption">' + item.caption + '</span>'; 
+		if(item.glyph) row+= '<span class="menu-glyph alright">' + item.glyph + '</span>';	
+		if(item.target) html+= '<a href="' + item.target + '" class="menu-target">' + row +'</a>';
 		else html+= row;
 
 		html+= '</span>\n';
