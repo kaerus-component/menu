@@ -23,6 +23,15 @@ ul.menu li div {
 	padding-right: 0.25em;
 }
 
+ul.menu li hr {
+	color: #aaa;
+	border: none;
+	background-color: rgba(0,0,0,0.2);
+	height: 1px;
+	margin-left: -0.5em;
+	margin-right: -0.25em;
+}
+
 ul.menu li:hover {
 	background: rgba(0,0,0,0.4);
 	color: #eee;
