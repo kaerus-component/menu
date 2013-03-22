@@ -52,7 +52,7 @@ function render(items,isChild){
 		li = '<li>\n';
 		if(item.id) li = li.replace('>\n',' id="' + item.id + '">\n');
 		if(isChild) li = li.replace('>\n',' class="child">\n');
-		li+= '<span class="row">';
+		li+= '<div>';
 		
 		if(isChild && item.child && !item.glyph) item.glyph = childSym;
 		if(item.shortcut) {
@@ -60,15 +60,16 @@ function render(items,isChild){
 			item.glyph = xlate(item.shortcut) + trailing;
 		}
 
-		caption =  '<span class="caption">' + item.caption + '</span>';
+		if(item.glyph) li+= '<div class="right"><span class="glyph">' + item.glyph + '</span></div>';
 
+		li+= '<div>';
+		caption =  '<span class="caption">' + item.caption + '</span>';
 		if(item.icon) li+= '<span class="icon">' + item.icon + '</span>'; 
 		if(item.target) li+= '<a href="' + item.target + '">' + caption + '</a>';
 		else li+= caption;
+		li+= '</div>';	
 
-		if(item.glyph) li+= '<span class="glyph alright">' + item.glyph + '</span>';	
-		
-		li+= '</span>\n';
+		li+= '</div>\n';
 		
 		if(item.child) li+= render(item.child,true);
 		
