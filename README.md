@@ -23,11 +23,11 @@ Nested menu
 		var Menu = require('menu');
 
 		var items = [
-			{caption:"First",target:"first.html"},
 			{caption:"Test",child:[
-				{caption:"Something",target:"second.html",glyph:"X"},
+				{caption:"Something",id:"something",target:"something.html",shortcut:"[META]S"},
+				{caption:"Open File",id:"fileopen",shortcut:"[CTRL]O"},
 				{caption:"Third",child:[
-					{caption:"Fourth",target:"fourth.html",shortcut:"^C"}
+					{caption:"Fourth",target:"fourth.html",shortcut:"[ALT]F"}
 				]}
 			]}
 		];	

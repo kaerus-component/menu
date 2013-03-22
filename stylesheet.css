@@ -28,7 +28,6 @@ ul.menu li span.row {
 	padding-right: 0.5em;
 }
 
-
 ul.menu li:hover {
 	background: rgba(0,0,0,0.4);
 	color: #eee;
@@ -43,7 +42,8 @@ ul.menu li a {
 	text-decoration: none;
 }
 
-.menu-glyph {
+ul.menu li span.glyph,
+ul.menu li a span.glyph {
 	color: #777;
 	margin-right: 0.5em;
 }
