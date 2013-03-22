@@ -1,3 +1,7 @@
+/* 
+ * Copyright (c) 2012-2013 Kaerus (kaerus.com), Anders Elo <anders @ kaerus com>.
+ */
+ 
 function Menu(target) {
 	if(target) this.target(target);
 }
@@ -71,7 +75,7 @@ function render(items,isChild){
 			caption = '<span class="caption">';
 			if(item.icon) caption+='<span class="icon">' + item.icon + '</span>';
 			caption+= item.caption + '</span>';
-			 
+
 			if(item.target) li+= '<a href="' + item.target + '">' + caption + '</a>';
 			else li+= caption;
 			li+= '</div>';	
