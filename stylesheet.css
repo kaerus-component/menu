@@ -14,7 +14,6 @@ ul.menu li {
 	float: left;
 	top: auto;
 	color: #444;
-	width: auto;
 	white-space: nowrap;
 }
 
@@ -50,7 +49,7 @@ ul.menu li a span.glyph {
 
 .alright {
 	float: right;
-	display: inline-block; 
+	display: inline;
 	text-align: right;
 	font-size: 0.75em;
 }
@@ -80,6 +79,7 @@ ul.menu li > ul li {
 	position: relative;
 	left: auto;
 	width: 100%;
+	clear: left;
 }
 
 

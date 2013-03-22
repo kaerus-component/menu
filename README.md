@@ -27,7 +27,8 @@ Nested menu
 				{caption:"Something",id:"something",target:"something.html",shortcut:"[META]S"},
 				{caption:"Open File",id:"fileopen",shortcut:"[CTRL]O"},
 				{caption:"Third",child:[
-					{caption:"Fourth",target:"fourth.html",shortcut:"[ALT]F"}
+					{caption:"Fourth",target:"fourth.html",shortcut:"[ALT]F"},
+					{caption:"Fifth",target:"fifth.html",shortcut:"[SHIFT]F"}
 				]}
 			]}
 		];	
