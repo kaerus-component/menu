@@ -1,7 +1,7 @@
 /* 
  * Copyright (c) 2012-2013 Kaerus (kaerus.com), Anders Elo <anders @ kaerus com>.
  */
- 
+
 function Menu(target) {
 	if(target) this.target(target);
 }
@@ -68,7 +68,7 @@ function render(items,isChild){
 			li+= '<hr/>';
 		}
 		else {
-			if(item.glyph) li+= '<div class="right"><span class="glyph">' + item.glyph + '</span></div>';
+			if(item.glyph) li+= '<span class="glyph">' + item.glyph + '</span>';
 
 			li+= '<div>';
 

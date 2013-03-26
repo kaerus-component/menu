@@ -22,7 +22,7 @@ ul.menu li {
 
 ul.menu li div {
 	padding-left: 0.5em;
-	padding-right: 0.25em;
+	padding-right: 0.5em;
 }
 
 ul.menu li hr {
@@ -31,7 +31,7 @@ ul.menu li hr {
 	background-color: rgba(0,0,0,0.2);
 	height: 1px;
 	margin-left: -0.5em;
-	margin-right: -0.25em;
+	margin-right: -0.5em;
 }
 
 ul.menu li:hover {
@@ -50,20 +50,13 @@ ul.menu li a {
 
 ul.menu li span.glyph,
 ul.menu li a span.glyph {
+	margin-top: 0.25em;
 	font-size: 0.75em;
 	color: #777;
-}
-
-div.left {
-	float: left;
-	display: inline;
-	text-align: left;
-}
-
-div.right {
 	float: right;
 	text-align: right;
 }
+
 
 ul.menu li > ul {
 	display: none;

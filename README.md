@@ -16,11 +16,11 @@ Nested menu
 </head>
 <body>
 	<header>
-		<div id="menu"></div>
+		<nav id="menu"></nav>
 	</header>
-	<script src="../build/build.js"></script>
+	<script src="menu.js"></script>
 	<script>
-		var Menu = require('menu');
+		var Menu = new (require('menu'))();
 
 		var items = [
 			{caption:"Test",child:[
@@ -35,8 +35,8 @@ Nested menu
 			]}
 		];	
 
-		var header_menu = new Menu('menu'); 
-		header_menu.show(items);
+		Menu.show(items); 
+		
 	</script>
 </body>
 </html>
