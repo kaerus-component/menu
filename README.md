@@ -46,7 +46,7 @@ Nested menu
 License
 =======
 ```
-Copyright (c) 2012 Kaerus (kaerus.com), Anders Elo <anders @ kaerus com>.
+Copyright (c) 2013 Kaerus (kaerus.com), Anders Elo <anders @ kaerus com>.
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
